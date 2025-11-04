@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* Slimmer navbar */
+header {
+  background: #f8d7da;
+  padding: 0.3rem 1.5rem;
+  display: flex;
+  gap: 850px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Logo container with image and text */
+.log {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* height: auto; */
+  padding: 0;
+  width: 300px;
+}
+
+.log img {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Logo text */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c2185b;
+}
+
+/* Navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c2185b;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Hero section */
+.hero {
+  background: #ffeef0;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 60px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #c2185b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Content sections */
+.about, .products, .Reviews, .contact {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+/* Product grid */
+.product-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.product-card {
+  border: 2px solid #b8b8b8;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  background-color: #f8d7da; /* Site theme color */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #c2185b;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #f8d7da;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
